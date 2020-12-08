@@ -13,10 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', 'WelcomeController@index')->name('welcome');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/menu', 'MenuController@index')->name('menu');
+Route::get('/menu/{platillo}', 'MenuController@show')->name('platillo');
+
+Route::get('/especiales', 'EspecialesController@index')->name('especiales');
+
+Route::get('/ubicacion', function () {
+    return view('ubicacion');
+})->name('ubicacion');
+
+Route::get('/postres', 'PostresController@index')->name('postres');
+Route::get('/bebidas', 'BebidasController@index')->name('bebidas');
+
+Route::get('/comprar/{id}', 'ComprarController@index')->name('comprar');
+

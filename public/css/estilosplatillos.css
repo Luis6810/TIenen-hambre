@@ -1,0 +1,151 @@
+*{margin:0; padding:0;} 
+
+/*-----------------Color de todo el fondo-----------*/
+.body{ 
+    background:#FFF9C4;
+}
+
+/*----------------Estilos del header-----------------------------*/
+.contenedor{
+    background-color:#F44336;
+    width: 100%;
+    height: 160px;
+}
+.header{
+    margin-top: 50px;
+    position: relative;  
+}
+.header .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%)      
+}
+.cabecera{ 
+  margin-bottom: 20px;  
+}
+.logotipo{ 
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.logotipo:hover{
+    background: rgba(51,51,51,0.5);
+}
+.button{
+    background: #CDDC39;	
+    color:black;
+    display:inline-block;
+    font-size: 1.25em;
+    margin: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 200px;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    bottom: 70px;   
+}
+.button:hover{
+    background: rgba(51,51,51,0.5);
+}
+
+/*----------------Estilos de volver a menú-----------------------------*/
+body h2{
+    font-family:sans-serif;
+    font-size: 1.25em;
+    font-style:italic;
+    font-weight:bold;
+    text-align:left:50px;
+   
+}
+.container_h{
+    background:#fffffa;
+    
+    padding: 1px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+/*----------------Estilos de descripción e imagen-----------------------------*/
+.container{
+    background-color:#FFF9C4;
+    padding: 1.2em;
+    overflow: hidden;
+}
+.container .destacados__img{ /*medidas de la imagen de platillos destacados*/
+    width: 580px;
+    height: 350px;
+    
+}
+.item{ /*espacio que sostiene a las imagenes una al lado de otra de platillos destacados */
+    margin: 1em;
+    padding: 1em;
+    color:black;
+    float: left;
+}
+
+.container h1{ /*Estilos de titulo "Flautas"*/
+    font-family:sans-serif;
+    font-size: 3em;
+    color: black;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.container p{ /*Estilos de titulo "Flautas"*/
+    font-family:serif;
+    font-size: 1.3em;
+    color: black;
+    padding: 5px;
+    margin-left: 20px;
+}
+.container h2{ /*Estilos de precio y cantidad*/
+    font-family:serif;
+    font-size: 1.8em;
+    color: black;
+    padding:5px;
+    margin-left: 20px;
+}
+/*----------------Estilos de boton-----------------------------*/
+.btn{
+    background: #FFC107;	
+    color:black;
+    display:inline-block;
+    font-size: 1.25em;
+    margin: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 200px;
+    margin-left: 190px;
+    text-decoration: none;
+    position: relative;
+    bottom: -50px;   
+}
+.btn:hover{
+    background: rgba(51,51,51,0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

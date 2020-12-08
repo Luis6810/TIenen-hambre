@@ -18,13 +18,33 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
+    {{-- <link rel="stylesheet" href="css/estilosplatillos.css">  --}}
 </head>
 <body>
+
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        {{-- <header>
+            <section class="cabecera">
+                <div class="contenedor">
+                    <a href="#imagen1">
+                   
+                    <img src=" {{asset('img/ICONO.png')}} " alt="" class="logotipo">
+                    </a> 
+                    <a href="#" class="button">Menú</a>
+                    <a href="#" class="button">Ubicación</a>
+                </div>
+            </section>        
+        </header>  --}}
+
+
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #F44336; important;">
             <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="{{asset('img/ICONO.png')}}" width="90" height="80" alt="" loading="lazy">
+                  </a>
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    ¿TIenen Comida?
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -33,7 +53,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link button" href=" {{route('menu')}} ">Menú</a>
+                          </li>
 
+                          
+                          <li class="nav-item active">
+                            <a class="nav-link button" href=" {{route('postres')}} ">Postres</a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link button" href=" {{route('especiales')}} ">Especiales</a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link button" href=" {{route('bebidas')}} ">Bebidas</a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link button" href=" {{route('ubicacion')}} ">Ubicación</a>
+                          </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -72,9 +108,98 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="">
             @yield('content')
         </main>
     </div>
+
+     <!-- Footer -->
+     <footer class="page-footer footer font-small bg-dark pt-4 mt-0 text-white">
+            
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+            
+            <!-- Grid row -->
+            <div class="row">
+                
+                <!-- Grid column -->
+                <div class="col-md-4 mt-md-0 mt-3">
+                    
+                    <!-- Content -->
+                    <h4 class="">Encuéntranos</h4>
+                    
+                    <p>Avenida Heroico Colegio Militar 500, Valle de Santiago, Guanajuato, México C.P. 38400 <span class="fas fa-map-marker-alt">
+                        
+                    </span></p>
+                    
+                    <p>Tel. 01 (456)138 54 12<span class="fa fa-phone">
+                        
+                    </span></p>
+                    
+                    
+                    
+                    
+                </div>
+
+                <div class="col-md-2">
+                      <ul class="navbar-nav ml-auto">
+                    <div class="flex-center position-ref full-height text-success">
+                       
+                </ul>
+                </div>
+                <!-- Grid column -->
+                
+                <hr class="clearfix w-100 d-md-none pb-3">
+                
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+                    
+                    <!-- Links -->
+                    <div class="footer-columna">
+                        <h4>Categorías</h4>
+                        <a href=" {{route('bebidas')}} ">Bebidas</a>
+                        <br>
+                        <a href="  {{route('postres')}}">Postres</a>
+                        <br>
+                        <a href=" {{route('especiales')}}">Especiales</a>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+                <!-- Grid column -->
+                
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+                    
+                    <!-- Links -->
+                    <div class="footer-columna">
+                        
+                        <h4>Conoce nuestros productos</h4>
+                        <a
+                            href=" {{route('menu')}} ">Menú</a>
+                        <br>
+                        <br>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Grid column -->
+                
+            </div>
+            <!-- Grid row -->
+            
+        </div>
+        <!-- Footer Links -->
+        
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">&copy; 2020, Todos los derechos reservados | <a href="#" style="color: white;">
+            <a href="#">¿TIenen Habre?.</a>
+        </div>
+        <!-- Copyright -->
+        
+    </footer>
 </body>
 </html>
