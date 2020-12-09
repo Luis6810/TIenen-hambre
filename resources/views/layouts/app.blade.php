@@ -107,8 +107,13 @@
                 </div>
             </div>
         </nav>
-
+       
         <main class="">
+            @if (\Session::has('success'))
+            <div class="alert alert-success">
+                   {!! \Session::get('success') !!}
+            </div>
+        @endif
             @yield('content')
         </main>
     </div>
@@ -196,7 +201,7 @@
         
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">&copy; 2020, Todos los derechos reservados | <a href="#" style="color: white;">
-            <a href="#">¿TIenen Habre?.</a>
+            <a href="#">¿TIenen Hambre?.</a>
         </div>
         <!-- Copyright -->
         

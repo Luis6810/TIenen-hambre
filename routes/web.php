@@ -34,3 +34,5 @@ Route::get('/bebidas', 'BebidasController@index')->name('bebidas');
 
 Route::get('/comprar/{id}', 'ComprarController@index')->name('comprar');
 
+Route::post('/buy','ComprarController@buy')->name('buy');
+

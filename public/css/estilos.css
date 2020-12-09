@@ -145,42 +145,96 @@
     transform: rotate(10deg) scale(0.8);
 }
 
-.content{
-    width: 98%;
-    max-width:500px;
-    margin: auto;
-}
 
-.content >a{
+.content >button{
     background: #CDDC39;	
     color:black;
     display:inline-block;
     font-size: 1.25em;
     margin: 10px;
+    border-radius: 20px;
     padding: 10px 0px;
     text-align: center;
-    width: 100px;
-    border-radius: 20px;
+    width: 300px;
+    
     text-decoration: none;
-    position: relative;  
+    position: relative;
+    bottom: -10px;  
+    left: 300px;
+    top: 1px;
 }
-.content >a:hover{
+.content >button:hover{
     background: rgba(51,51,51,0.5);
 }
-.content >input{
-    padding: 10px 30px;
-    display: flex;
-    flex-wrap: wrap;
+.conte > h2{
+    font-size: 1.7em;
+    font-family: cursive;
+    margin: 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
     
-
+    
 }
-.content .input {
+.conte > h4{
+    font-size: 1.4em;
+    color: #F44336;
+    
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    
+ 
+}
+.conte > h5{
+    font-size: 1.2em;
+    
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.content >h2{
+    font-size: 1.7em;
+    font-family: cursive;
+}
+.content > input{
+    padding: 10px 30px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input{
     margin-bottom: 15px;
     padding: 15px;
-    font-size: 14px;
-    border-radius: 3px;
-    border: 1px solid #DE423A;
+    
 }
+.input-48{
+    width: 24%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float: left;
+    border-color: #CDDC39;
+    font-family:sans-serif;
+    font-size: 1.0em;
+
+
+    
+}
+.content{
+    width: 800%;
+    max-width: 970px;
+  
+    margin: 50px;
+}
+.linea{
+   background: #0e0e10;
+   height: 5px;
+   width: 100%;
+   display: block;
+ 
+}
+
 
 
 
